@@ -21,7 +21,7 @@ def simulate_dice_rolls(num_simulations, num_dice):
     return probabilities
 
 
-if __name__ == '__main__':
+def main():
     probabilities = simulate_dice_rolls(NUMBER_SIMULATIONS, NUMBER_DICES)
 
     sums = list(probabilities.keys())
@@ -32,3 +32,7 @@ if __name__ == '__main__':
     plt.ylabel('Probability')
     plt.title('Probability of getting certain sum using Monte Carlo simulation')
     plt.show()
+
+
+if __name__ == '__main__':
+    main()
