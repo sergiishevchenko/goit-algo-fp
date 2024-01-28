@@ -1,6 +1,8 @@
 import random
 import matplotlib.pyplot as plt
 
+from consts import NUMBER_SIMULATIONS, NUMBER_DICES
+
 
 def simulate_dice_rolls(num_simulations, num_dice):
     results = {}
@@ -20,10 +22,7 @@ def simulate_dice_rolls(num_simulations, num_dice):
 
 
 if __name__ == '__main__':
-    number_simulations = 100000
-    number_dice = 2
-
-    probabilities = simulate_dice_rolls(number_simulations, number_dice)
+    probabilities = simulate_dice_rolls(NUMBER_SIMULATIONS, NUMBER_DICES)
 
     sums = list(probabilities.keys())
     probabilities_values = list(probabilities.values())
